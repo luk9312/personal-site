@@ -1,0 +1,42 @@
+.about{
+  .title {
+    color: rgba(255, 0, 0, 0.6);
+    padding: 15px 0;
+    min-width: 150px;
+    font-weight: 500;
+  }
+  .icon-bar {
+    padding-bottom: 30px;
+    a {
+      padding-right: 5px;
+    }
+  }
+  .i-home{
+    color:rgb(0, 0, 0) ;
+    :hover{
+      transform: scale(1.2);
+      color:rgba(10, 10, 10, 0.7);
+    }
+  }
+  .i-fb{
+    color:rgba(46,89,144, 1);
+    :hover{
+      transform: scale(1.2);
+      color:rgba(46,89,144, 0.7);;
+    }
+  }
+  .i-li{
+    color:rgba(19,126,172, 1);
+    :hover{
+      transform: scale(1.2);
+      color:rgba(19,126,172, 0.7);
+    }
+  }
+  .i-in{
+    color:rgb(0, 0, 0) ;
+    :hover{
+      transform: scale(1.2);
+      color:rgba(10, 10, 10, 0.7);
+    }
+  }
+}
