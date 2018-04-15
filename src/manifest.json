@@ -1,0 +1,20 @@
+{
+    "name": "Personal Site",
+    "short_name": "site",
+    "start_url": "/",
+
+    "theme_color": "#f48c5b",
+    "background_color": "#ffffff",
+
+    "display": "standalone",
+    "orientation": "portrait",
+
+    "icons": [
+        {
+            "src": "/assets/favicon/apple-touch-icon.png",
+            "sizes": "180×180",
+            "type": "image/png"
+        }
+    ]
+
+}

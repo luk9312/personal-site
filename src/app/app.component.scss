@@ -1,0 +1,71 @@
+@import "~fullpage.js/dist/jquery.fullpage.css";
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+$body-color: #333;
+
+
+$section-code-background: rgba(255, 255, 255, .1);
+
+$welcome-section-degree: 90deg;
+$welcome-section-first-color: rgba(255, 177, 0, 0.2);
+$welcome-section-second-color: rgba(52, 0, 255, 0.4);
+
+$about-section-degree: 90deg;
+$about-section-first-color: rgba(32, 255, 0, .2);
+$about-section-second-color: $welcome-section-second-color;
+
+
+#fp-nav {
+  top: 50% !important;
+}
+
+.menu-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 70;
+  text-align: left;
+  height: 40px;
+  margin: auto;
+}
+
+
+
+.section {
+  text-align: center;
+}
+
+.section pre {
+  margin-top: 5px;
+  text-align: start;
+}
+
+.section pre code {
+  background: $section-code-background !important;
+  font-weight: normal;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  padding: 25px;
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 7px 50px;
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.welcome-section {
+  background: linear-gradient($welcome-section-degree, $welcome-section-first-color, $welcome-section-second-color);
+}
+
+.welcome-section .logo-image {
+  margin: 25px;
+}
+
+.about-section {
+  background: linear-gradient($about-section-degree, $about-section-first-color, $about-section-second-color); /* Standard syntax */
+}
