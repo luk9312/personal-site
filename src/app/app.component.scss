@@ -14,6 +14,10 @@ $about-section-degree: 90deg;
 $about-section-first-color: rgba(32, 255, 0, .2);
 $about-section-second-color: $welcome-section-second-color;
 
+$experience-section-degree: 90deg;
+$experience-section-first-color: $about-section-first-color;
+$experience-section-second-color: rgba(255, 238, 0, 0.2);
+
 
 #fp-nav {
   top: 50% !important;
@@ -68,4 +72,8 @@ button {
 
 .about-section {
   background: linear-gradient($about-section-degree, $about-section-first-color, $about-section-second-color); /* Standard syntax */
+}
+
+.experience-section {
+  background: linear-gradient($experience-section-degree, $experience-section-first-color, $experience-section-second-color); /* Standard syntax */
 }

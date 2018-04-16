@@ -1,0 +1,29 @@
+.achi-location{
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+.achi-year{
+  margin-bottom: 0px;
+}
+
+
+.researchLink{
+  margin:5px;
+  font-size:2em;
+}
+
+a{
+  &:link{
+    color: black;
+  }
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: black;
+  }
+  &:active {
+    color: red;
+  }
+}
