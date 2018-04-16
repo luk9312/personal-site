@@ -1,51 +1,55 @@
-<div class="row valign-wrapper">
-  <div class="col s2">
-    <button class="slider-click" (click)="fullpageService.moveSlideLeft()">
-      <i class="fa fa-chevron-left"></i>
-    </button>
-  </div>
-  <div class="col s8">
-    <div class="about card-panel">
-      <div class="row">
-          <div class="col s12 left-align">
-            <h3 class="title">Academic</h3>
-            <hr>
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="col m1 hide-on-small-only">
+        <button class="slider-click" (click)="fullpageService.moveSlideLeft()">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+      </div>
+      <div class="col s12 m10">
+        <div class="about card-panel">
+          <div class="row">
+              <div class="col s12 left-align">
+                <h3 class="title">Academic</h3>
+                <hr>
+              </div>
+              <div class="col s12">
+                <div class="col s12 m6 left-align">
+                  <h4>SubTitle:</h4>
+                  <ul>
+                    <li *ngFor="let achievement of listOfAchievement">
+                      <div class="col s12">
+                        <div class="col s12 m4">
+                          <p class="achi-year">{{ achievement.year }}</p>
+                          <p class="achi-location">{{ achievement.location }}</p>
+                        </div>
+                        <div class="col s12 m8">
+                          <p class="achi-description">{{ achievement.description }}</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col s12 m6 left-align">
+                  <h4>Research publish:</h4>
+                  <ul>
+                    <li *ngFor="let research of listOfResearch">
+                      <div class="col s12">
+                        <a class="researchLink" [href]="research.link">{{ research.name }}</a>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
+              </div>
+              
           </div>
-          <div class="col s12">
-            <div class="col s12 m6 left-align">
-              <h4>SubTitle:</h4>
-              <ul>
-                <li *ngFor="let achievement of listOfAchievement">
-                  <div class="col s12">
-                    <div class="col s12 m4">
-                      <p class="achi-year">{{ achievement.year }}</p>
-                      <p class="achi-location">{{ achievement.location }}</p>
-                    </div>
-                    <div class="col s12 m8">
-                      <p class="achi-description">{{ achievement.description }}</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col s12 m6 left-align">
-              <h4>Research publish:</h4>
-              <ul>
-                <li *ngFor="let research of listOfResearch">
-                  <div class="col s12">
-                    <a class="researchLink" [href]="research.link">{{ research.name }}</a>
-                  </div>
-                </li>
-              </ul>
-          </div>
-          </div>
-          
+        </div>
+      </div>
+      <div class="col m1 hide-on-small-only">
+        <button class="slider-click" (click)="fullpageService.moveSlideRight()">
+          <i class="fa fa-chevron-right"></i>
+        </button>
       </div>
     </div>
-  </div>
-  <div class="col s2">
-    <button class="slider-click" (click)="fullpageService.moveSlideRight()">
-      <i class="fa fa-chevron-right"></i>
-    </button>
   </div>
 </div>
