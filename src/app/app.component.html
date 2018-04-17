@@ -24,15 +24,36 @@
     </div>
   </div>
 
-  <div id="section2" class="section experience-section fp-section fp-table">
+  <div id="section3" class="section experience-section fp-section fp-table">
     <div 
       class="fp-tableCell">
-      <div class="slide">
-        <school></school>
+      <div class="row valign-wrapper">
+        <div class="col s1 hide-on-med-and-down">
+          <button class="slider-click" (click)="fullpageService.moveSlideLeft()">
+            <i class="medium fa fa-chevron-left"></i>
+          </button>
+        </div>
+        <div class="col s12 l10">
+          <div class="slide">
+            <school></school>
+          </div>
+          <div class="slide">
+            <work></work>
+          </div>
+        </div>
+        <div class="col s1 hide-on-med-and-down">     
+          <button class="slider-click" (click)="fullpageService.moveSlideRight()">
+            <i class="medium fa fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
-      <div class="slide">
-        <work></work>
-      </div>
+    </div>
+  </div>
+
+  <div id="section4" class="section fp-section fp-table">
+    <div class="fp-tableCell">
+      <resume>
+      </resume>
     </div>
   </div>
 

@@ -32,7 +32,14 @@ $experience-section-second-color: rgba(255, 238, 0, 0.2);
   margin: auto;
 }
 
-
+.slider-click {
+  padding: 0;
+  border: none;
+  background: none;
+  &:focus{
+    background: none;
+  }
+}
 
 .section {
   text-align: center;
@@ -49,17 +56,6 @@ $experience-section-second-color: rgba(255, 238, 0, 0.2);
   font-size: 1.2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
   padding: 25px;
-}
-
-button {
-  display: inline-block;
-  margin: 10px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  text-align: center;
-  padding: 7px 50px;
-  border-color: white;
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .welcome-section {
