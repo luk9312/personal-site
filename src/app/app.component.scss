@@ -25,11 +25,16 @@ $experience-section-second-color: rgba(255, 238, 0, 0.2);
 
 .menu-wrapper {
   position: fixed;
-  width: 100%;
+  width: 90%;
   z-index: 70;
   text-align: left;
   height: 40px;
   margin: auto;
+}
+
+.btn-menu{
+  margin-left: 2vw;
+  margin-top: 2vh;
 }
 
 .slider-click {
